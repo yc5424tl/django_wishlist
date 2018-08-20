@@ -1,0 +1,20 @@
+
+{% extends 'travel_wishlist/base.html' %}
+
+{% block content %}
+
+    <h1>Places you have visited</h1>
+
+    {% if visited %}
+        <ul>
+            {% for place in visited %}
+                <li><span class="visited-text">{{ place.name }}</span></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>You have not visited any places yet.</p>
+    {% endif %}
+
+{% endblock %}
+
+{#<a href="{% url 'place_list' %}">Your wishlist</a>#}
