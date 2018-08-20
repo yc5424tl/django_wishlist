@@ -1,0 +1,24 @@
+
+.visited-text {
+    display: inline-block;
+    width: 70%;
+}
+
+.visited-form {
+    display: inline;
+}
+
+
+
+/* ============= ^^Example styles from slides^^ ================ */
+
+
+
+.wishlist-place {
+    margin: 20px;
+}
+
+label {
+    display: inline-block;
+    padding-right: 8px;
+}

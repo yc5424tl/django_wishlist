@@ -1,0 +1,25 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Travel Wishlist</title>
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+
+    {% block content %}
+    {% endblock %}
+
+    <hr>
+
+    <p>A travel wishlist site built with Django</p>
+    <a href="{% url 'place_list' %}">Your wishlist</a>
+    <a href="{% url 'places_visited' %}">Places you've visited</a>
+
+</body>
+</html>
